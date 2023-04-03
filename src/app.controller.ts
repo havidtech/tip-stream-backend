@@ -6,7 +6,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Post()
+  @Get()
   getHello() {
     return this.appService.getHello();
   }
